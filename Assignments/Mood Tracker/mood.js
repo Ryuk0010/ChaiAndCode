@@ -1,6 +1,17 @@
 const moodElements = document.querySelectorAll(".mood")
 const historyList = document.getElementById("history");
+const clearBtn = document.getElementById("Clear");
 
+
+function updateClearButtonVisibility() {
+    const storedHistory = JSON.parse(localStorage.getItem("moodHistory")) || [];
+    clearBtn.style.display = storedHistory.length > 0 ? "block" : "none";
+}
+clearBtn.addEventListener("click", () => {
+    localStorage.removeItem("moodHistory");
+    historyList.innerHTML = "";
+    updateClearButtonVisibility();
+})
 
 
 moodElements.forEach(mood => {
@@ -16,6 +27,7 @@ moodElements.forEach(mood => {
         
         const listItem = createHistoryItem(finalObj);
         historyList.appendChild(listItem);
+        updateClearButtonVisibility();  
     })
 })
 
@@ -46,3 +58,4 @@ function createHistoryItem(finalObj) {
 }
 
 loadHistory();
+updateClearButtonVisibility();
