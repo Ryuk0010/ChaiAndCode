@@ -1,6 +1,6 @@
 <h1> 📚 Book Library
 
-<h3> 🚀 Live Demo: [Book Library](https://subtle-speculoos-fdc721.netlify.app/)
+# 🚀 Live Demo: [Book Library](https://subtle-speculoos-fdc721.netlify.app/)
 
 ## 🛠️ Tech Stack
 
