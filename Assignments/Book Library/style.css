@@ -1,0 +1,206 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+#hero-section {
+    text-align: center;
+    padding: 30px 15px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+#hero-section h1 {
+    font-size: 2.5rem;  
+    margin-bottom: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    
+}
+
+.book-container.list-view {
+    display: flex;  
+    flex-direction: column; 
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+ 
+}
+
+.book-container.list-view .bookInfo {
+    display: flex;
+    justify-content:space-between;
+    width: 80%;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.book-container.list-view .book-thumbnail {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.bookInfo {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.bookInfo .list-view{
+    display: flex;
+}
+
+.bookInfo:hover {
+    transform: translateY(-10px);
+}
+
+.book-thumbnail {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.bookInfo h3, 
+.bookInfo h4 {
+    margin: 10px;
+    color: #333;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    color: #6a11cb;
+}
+
+.book-author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.book-publisher, .book-publishedDate {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.search-section {
+    flex: 9;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    gap: 10px;
+    margin-left: 170px;
+}
+#sort {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+#sort button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sort button:hover {
+    background: #218838;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6a11cb;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#pageNumber {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.search-section button {
+    padding: 12px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;          
+    max-width: 400px;
+    font-size: 16px;
+}
+.search-section button:hover {
+    background: #218838;
+}
